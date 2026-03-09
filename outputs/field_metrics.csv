@@ -1,0 +1,9 @@
+metric_name,precision,recall,f1_score,accuracy
+calendar_event_required,1.0,1.0,1.0,
+action_required,1.0,1.0,1.0,
+event_category,1.0,1.0,1.0,
+action_type,1.0,1.0,1.0,
+event_date_accuracy,,,,0.8
+start_time_accuracy,,,,1.0
+end_time_accuracy,,,,1.0
+action_deadline_accuracy,,,,0.8
