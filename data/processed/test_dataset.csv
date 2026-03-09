@@ -1,0 +1,1 @@
+message_id,source_type,split,sent_at,subject,body,gold_calendar_event_required,gold_event_category,gold_event_date,gold_start_time,gold_end_time,gold_action_required,gold_action_type,gold_action_deadline,gold_summary,edge_case_tag
