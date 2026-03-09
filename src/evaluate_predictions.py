@@ -5,11 +5,9 @@ from schemas import EVENT_CATEGORIES, ACTION_TYPES
 
 # Gold dataset and baseline prediction file paths.
 goldFilePath = os.path.join("data", "processed", "eval_dataset.csv")
-predictionFilePath = os.path.join("outputs", "baseline_predictions.csv")
-
-# Output files for evaluation results.
-summaryMetricsFilePath = os.path.join("outputs", "summary_metrics.csv")
-fieldMetricsFilePath = os.path.join("outputs", "field_metrics.csv")
+predictionFilePath = os.path.join("outputs", "qwen_predictions.csv")
+summaryMetricsFilePath = os.path.join("outputs", "qwen_summary_metrics.csv")
+fieldMetricsFilePath = os.path.join("outputs", "qwen_field_metrics.csv")
 
 
 def loadCsvFile(filePath):

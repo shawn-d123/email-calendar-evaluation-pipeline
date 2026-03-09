@@ -3,11 +3,11 @@ import pandas as pd
 
 # Input files.
 goldFilePath = os.path.join("data", "processed", "eval_dataset.csv")
-predictionFilePath = os.path.join("outputs", "baseline_predictions.csv")
+predictionFilePath = os.path.join("outputs", "qwen_predictions.csv")
 
 # Output files.
-failureCasesFilePath = os.path.join("outputs", "failure_cases.csv")
-failureSummaryFilePath = os.path.join("outputs", "failure_summary.csv")
+failureCasesFilePath = os.path.join("outputs", "qwen_failure_cases.csv")
+failureSummaryFilePath = os.path.join("outputs", "qwen_failure_summary.csv")
 
 
 def loadCsvFile(filePath):
