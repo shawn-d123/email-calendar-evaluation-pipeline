@@ -4,5 +4,6 @@ scikit-learn
 python-dateutil
 dateparser
 ollama
+pydantic
 tqdm
 pytest

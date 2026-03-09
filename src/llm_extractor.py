@@ -8,7 +8,7 @@ from pydantic import BaseModel, ConfigDict, ValidationError
 
 
 # Model and file paths for the first LLM benchmark.
-modelName = "qwen2.5:3b"
+modelName = "qwen3:8b"
 inputFilePath = os.path.join("data", "processed", "eval_dataset.csv")
 outputFilePath = os.path.join("outputs", "qwen_predictions.csv")
 
