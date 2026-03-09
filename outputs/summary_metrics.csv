@@ -1,2 +1,2 @@
 provider,rows_evaluated,average_latency_ms,calendar_event_required_f1,action_required_f1,event_category_macro_f1,action_type_macro_f1,event_date_accuracy,action_deadline_accuracy
-baseline_rules,5,231.85,1.0,1.0,1.0,1.0,0.8,0.8
+baseline_rules,20,87.45,0.9412,0.9655,0.7605,0.887,0.8,0.85

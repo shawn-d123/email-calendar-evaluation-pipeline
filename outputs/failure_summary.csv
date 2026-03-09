@@ -1,4 +1,9 @@
 field_name,failure_count
-summary,5
-action_deadline,1
-event_date,1
+event_date,4
+action_deadline,3
+event_category,3
+action_type,2
+calendar_event_required,2
+action_required,1
+end_time,1
+start_time,1

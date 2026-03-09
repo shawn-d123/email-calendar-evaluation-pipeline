@@ -124,12 +124,6 @@ def getFieldMappings():
             "gold_column": "gold_action_deadline",
             "pred_column": "pred_action_deadline",
             "field_type": "text"
-        },
-        {
-            "field_name": "summary",
-            "gold_column": "gold_summary",
-            "pred_column": "pred_summary",
-            "field_type": "text"
         }
     ]
 
