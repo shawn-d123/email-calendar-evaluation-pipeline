@@ -1,0 +1,8 @@
+pandas
+numpy
+scikit-learn
+python-dateutil
+dateparser
+ollama
+tqdm
+pytest
