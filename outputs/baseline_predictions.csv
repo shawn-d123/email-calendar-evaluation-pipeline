@@ -1,0 +1,6 @@
+message_id,provider,pred_calendar_event_required,pred_event_category,pred_event_date,pred_start_time,pred_end_time,pred_action_required,pred_action_type,pred_action_deadline,pred_summary,latency_ms
+msg_001,baseline_rules,true,trip,2026-03-12,09:00,15:00,true,pay,2026-03-06,trip on 2026-03-12; from 09:00 to 15:00; pay by 2026-03-06.,806.31
+msg_002,baseline_rules,true,cancellation_change,2026-03-03,,,false,none,,cancellation change on 2026-03-03.,131.75
+msg_003,baseline_rules,true,meeting_admin,2026-03-18,16:30,19:00,true,reply_confirm,2026-03-09,meeting admin on 2026-03-18; from 16:30 to 19:00; reply confirm by 2026-03-09.,34.9
+msg_004,baseline_rules,true,reminder_other,2026-03-05,,,true,bring_item,2026-03-05,reminder other on 2026-03-05; bring item by 2026-03-05.,127.07
+msg_005,baseline_rules,false,none,,,,false,none,,No event or action required.,59.21
