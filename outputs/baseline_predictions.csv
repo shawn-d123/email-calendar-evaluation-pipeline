@@ -1,21 +1,41 @@
 message_id,provider,pred_calendar_event_required,pred_event_category,pred_event_date,pred_start_time,pred_end_time,pred_action_required,pred_action_type,pred_action_deadline,pred_summary,latency_ms
-msg_001,baseline_rules,true,trip,2026-03-12,09:00,15:00,true,pay,2026-03-06,trip on 2026-03-12; from 09:00 to 15:00; pay by 2026-03-06.,821.4
-msg_002,baseline_rules,true,cancellation_change,2026-03-03,,,false,none,,cancellation change on 2026-03-03.,137.85
-msg_003,baseline_rules,true,meeting_admin,2026-03-18,16:30,19:00,true,reply_confirm,2026-03-09,meeting admin on 2026-03-18; from 16:30 to 19:00; reply confirm by 2026-03-09.,43.49
-msg_004,baseline_rules,true,reminder_other,2026-03-05,,,true,bring_item,2026-03-05,reminder other on 2026-03-05; bring item by 2026-03-05.,20.34
-msg_005,baseline_rules,false,none,,,,false,none,,No event or action required.,59.29
-msg_006,baseline_rules,true,trip,2026-03-05,,,false,none,,trip on 2026-03-05.,31.85
-msg_007,baseline_rules,true,meeting_admin,2026-03-24,16:00,19:30,true,reply_confirm,,meeting admin on 2026-03-24; from 16:00 to 19:30; reply confirm required.,37.39
-msg_008,baseline_rules,true,club_activity,2026-03-17,,,true,bring_item,2026-03-17,club activity on 2026-03-17; bring item by 2026-03-17.,24.82
-msg_009,baseline_rules,true,reminder_other,2040-03-06,,,true,pay,2026-03-20,reminder other on 2040-03-06; pay by 2026-03-20.,28.82
-msg_010,baseline_rules,true,cancellation_change,2026-03-08,,,false,none,,cancellation change on 2026-03-08.,24.8
-msg_011,baseline_rules,true,reminder_other,2026-03-11,,,true,bring_item,2026-03-11,reminder other on 2026-03-11; bring item by 2026-03-11.,22.18
-msg_012,baseline_rules,false,none,,,,false,none,,No event or action required.,108.06
-msg_013,baseline_rules,true,trip,2026-03-26,08:30,16:00,true,pay,,trip on 2026-03-26; from 08:30 to 16:00; pay required.,38.94
-msg_014,baseline_rules,true,meeting_admin,2026-03-10,15:45,12:00,true,reply_confirm,2026-03-10,meeting admin on 2026-03-10; from 15:45 to 12:00; reply confirm by 2026-03-10.,31.45
-msg_015,baseline_rules,true,club_activity,2026-03-21,10:00,,true,attend,2026-03-21,club activity on 2026-03-21; attend by 2026-03-21.,38.43
-msg_016,baseline_rules,false,none,,,,true,reply_confirm,2026-03-22,reply confirm by 2026-03-22.,22.16
-msg_017,baseline_rules,true,cancellation_change,2026-03-11,,,false,none,,cancellation change on 2026-03-11.,153.8
-msg_018,baseline_rules,true,trip,2026-03-28,09:00,14:30,true,bring_item,2026-03-28,trip on 2026-03-28; from 09:00 to 14:30; bring item by 2026-03-28.,41.67
-msg_019,baseline_rules,false,none,,,,true,submit_form,2026-03-17,submit form by 2026-03-17.,30.36
-msg_020,baseline_rules,true,club_activity,2026-03-29,,,true,reply_confirm,2026-03-24,club activity on 2026-03-29; reply confirm by 2026-03-24.,31.81
+msg_001,baseline_rules,true,trip,2026-03-12,09:00,15:00,true,pay,2026-03-06,trip on 2026-03-12; from 09:00 to 15:00; pay by 2026-03-06.,826.15
+msg_002,baseline_rules,true,cancellation_change,2026-03-03,,,false,none,,cancellation change on 2026-03-03.,130.93
+msg_003,baseline_rules,true,meeting_admin,2026-03-18,16:30,19:00,true,reply_confirm,2026-03-09,meeting admin on 2026-03-18; from 16:30 to 19:00; reply confirm by 2026-03-09.,41.49
+msg_004,baseline_rules,true,reminder_other,2026-03-05,,,true,bring_item,2026-03-05,reminder other on 2026-03-05; bring item by 2026-03-05.,20.76
+msg_005,baseline_rules,false,none,,,,false,none,,No event or action required.,58.85
+msg_006,baseline_rules,true,trip,2026-03-05,,,false,none,,trip on 2026-03-05.,33.19
+msg_007,baseline_rules,true,meeting_admin,2026-03-24,16:00,19:30,true,reply_confirm,,meeting admin on 2026-03-24; from 16:00 to 19:30; reply confirm required.,35.49
+msg_008,baseline_rules,true,club_activity,2026-03-17,,,true,bring_item,2026-03-17,club activity on 2026-03-17; bring item by 2026-03-17.,23.65
+msg_009,baseline_rules,true,reminder_other,2040-03-06,,,true,pay,2026-03-20,reminder other on 2040-03-06; pay by 2026-03-20.,26.55
+msg_010,baseline_rules,true,cancellation_change,2026-03-08,,,false,none,,cancellation change on 2026-03-08.,19.57
+msg_011,baseline_rules,true,reminder_other,2026-03-11,,,true,bring_item,2026-03-11,reminder other on 2026-03-11; bring item by 2026-03-11.,18.61
+msg_012,baseline_rules,false,none,,,,false,none,,No event or action required.,98.53
+msg_013,baseline_rules,true,trip,2026-03-26,08:30,16:00,true,pay,,trip on 2026-03-26; from 08:30 to 16:00; pay required.,40.0
+msg_014,baseline_rules,true,meeting_admin,2026-03-10,15:45,12:00,true,reply_confirm,2026-03-10,meeting admin on 2026-03-10; from 15:45 to 12:00; reply confirm by 2026-03-10.,38.61
+msg_015,baseline_rules,true,club_activity,2026-03-21,10:00,,true,attend,2026-03-21,club activity on 2026-03-21; attend by 2026-03-21.,39.32
+msg_016,baseline_rules,false,none,,,,true,reply_confirm,2026-03-22,reply confirm by 2026-03-22.,22.14
+msg_017,baseline_rules,true,cancellation_change,2026-03-11,,,false,none,,cancellation change on 2026-03-11.,149.24
+msg_018,baseline_rules,true,trip,2026-03-28,09:00,14:30,true,bring_item,2026-03-28,trip on 2026-03-28; from 09:00 to 14:30; bring item by 2026-03-28.,44.14
+msg_019,baseline_rules,false,none,,,,true,submit_form,2026-03-17,submit form by 2026-03-17.,30.17
+msg_020,baseline_rules,true,club_activity,2026-03-29,,,true,reply_confirm,2026-03-24,club activity on 2026-03-29; reply confirm by 2026-03-24.,26.35
+enron_raw_0129,baseline_rules,true,meeting_admin,2018-07-07,04:23,01:16,false,none,,meeting admin on 2018-07-07; from 04:23 to 01:16.,137.09
+enron_raw_0133,baseline_rules,true,meeting_admin,2000-11-07,06:12,04:03,true,reply_confirm,,meeting admin on 2000-11-07; from 06:12 to 04:03; reply confirm required.,115.71
+enron_raw_0006,baseline_rules,true,meeting_admin,2000-04-10,04:23,12:23,true,pay,,meeting admin on 2000-04-10; from 04:23 to 12:23; pay required.,122.57
+enron_raw_0047,baseline_rules,true,club_activity,2000-09-06,02:01,10:12,true,pay,,club activity on 2000-09-06; from 02:01 to 10:12; pay required.,211.74
+enron_raw_0089,baseline_rules,true,meeting_admin,2000-08-23,10:58,01:28,true,pay,2000-08-17,meeting admin on 2000-08-23; from 10:58 to 01:28; pay by 2000-08-17.,197.03
+enron_raw_0096,baseline_rules,true,meeting_admin,2000-09-08,02:11,10:11,true,attend,2000-08-09,meeting admin on 2000-09-08; from 02:11 to 10:11; attend by 2000-08-09.,173.98
+enron_raw_0013,baseline_rules,false,none,,,,true,submit_form,,submit form required.,259.29
+enron_raw_0020,baseline_rules,true,meeting_admin,2000-09-26,12:07,09:23,false,none,,meeting admin on 2000-09-26; from 12:07 to 09:23.,104.62
+enron_raw_0009,baseline_rules,false,none,,,,true,pay,,pay required.,31.93
+enron_raw_0011,baseline_rules,false,none,,,,true,pay,,pay required.,112.25
+enron_raw_0012,baseline_rules,false,none,,,,false,none,,No event or action required.,38.02
+enron_raw_0070,baseline_rules,false,none,,,,false,none,,No event or action required.,128.82
+enron_raw_0104,baseline_rules,false,none,,,,false,none,,No event or action required.,34.51
+enron_raw_0153,baseline_rules,false,none,,,,false,none,,No event or action required.,159.18
+enron_raw_0192,baseline_rules,false,none,,,,false,none,,No event or action required.,27.45
+enron_raw_0022,baseline_rules,false,none,,,,false,none,,No event or action required.,33.69
+enron_raw_0025,baseline_rules,false,none,,,,false,none,,No event or action required.,29.95
+enron_raw_0026,baseline_rules,false,none,,,,false,none,,No event or action required.,34.52
+enron_raw_0030,baseline_rules,false,none,,,,true,pay,,pay required.,87.14
+enron_raw_0039,baseline_rules,false,none,,,,false,none,,No event or action required.,48.45

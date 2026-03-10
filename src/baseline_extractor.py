@@ -3,8 +3,10 @@ import re
 import time
 import pandas as pd
 from datetime import datetime
+from email.utils import parsedate_to_datetime
 from dateparser.search import search_dates
 from schemas import EVENT_CATEGORIES, ACTION_TYPES
+
 
 # Input dataset and output prediction file paths.
 inputFilePath = os.path.join("data", "processed", "eval_dataset.csv")
@@ -57,10 +59,39 @@ def getSentAtDateTime(sentAtValue):
     """
     Convert the sent_at value into a datetime object.
 
-    The sent time is used as the reference point when resolving relative
-    date expressions such as 'tomorrow' or 'next Thursday'.
+    The project uses two timestamp styles:
+    - benchmark rows in YYYY-MM-DD HH:MM:SS format
+    - Enron rows in email header date format
+
+    This function supports both so the extractor can run on the mixed dataset.
     """
-    return datetime.strptime(str(sentAtValue), "%Y-%m-%d %H:%M:%S")
+    sentAtText = str(sentAtValue).strip()
+
+    if sentAtText == "" or sentAtText.lower() == "nan":
+        # Fall back to a fixed date if no usable timestamp is available.
+        return datetime(2000, 1, 1, 0, 0, 0)
+
+    # First try the standard benchmark format used by the synthetic rows.
+    try:
+        return datetime.strptime(sentAtText, "%Y-%m-%d %H:%M:%S")
+    except ValueError:
+        pass
+
+    # Then try the email-style date format used by the Enron rows.
+    try:
+        parsedDateTime = parsedate_to_datetime(sentAtText)
+
+        # Remove timezone information so it works cleanly with the rest
+        # of the pipeline and the dateparser settings.
+        if parsedDateTime.tzinfo is not None:
+            parsedDateTime = parsedDateTime.replace(tzinfo=None)
+
+        return parsedDateTime
+    except Exception:
+        pass
+
+    # Final fallback so one bad timestamp does not stop the whole run.
+    return datetime(2000, 1, 1, 0, 0, 0)
 
 
 def detectEventCategory(fullText):

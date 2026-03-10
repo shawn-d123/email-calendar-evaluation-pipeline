@@ -1,2 +1,2 @@
 provider,rows_evaluated,average_latency_ms,calendar_event_required_f1,action_required_f1,event_category_macro_f1,action_type_macro_f1,event_date_accuracy,action_deadline_accuracy
-qwen3_8b,20,11599.84,0.9412,1.0,0.7401,0.9429,0.9,0.85
+qwen3_8b,40,24516.33,0.902,0.9643,0.7333,0.8187,0.875,0.8

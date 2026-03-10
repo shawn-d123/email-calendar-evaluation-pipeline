@@ -1,0 +1,4 @@
+metric_name,metric_value
+raw_rows_loaded,1000
+duplicate_rows_removed,32
+clean_rows_saved,778
