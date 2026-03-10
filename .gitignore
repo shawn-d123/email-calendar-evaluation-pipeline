@@ -1,0 +1,6 @@
+# Raw datasets
+data/raw/enron_maildir/
+data/intermediate/enron_messages_raw.csv
+
+# Optional large derived files
+outputs/qwen_predictions.csv
